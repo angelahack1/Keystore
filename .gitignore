@@ -1,0 +1,5 @@
+*.pem
+*.properties
+*.dat
+*.b64
+*.bin
