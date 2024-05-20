@@ -1,0 +1,35 @@
+{
+  "name": "keystore",
+  "version": "1.0.0",
+  "description": "An AIXKARE hi tech Keystore technology with asimetrical cipher scheme.",
+  "main": "crypt.js",
+  "scripts": {
+    "test": "node crypt.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelahack1/Keystore.git"
+  },
+  "keywords": [
+    "Keystore",
+    "Cybersec",
+    "AIXKARE",
+    "aixkare",
+    "asimetrical",
+    "cipher",
+    "AI",
+    "Secure",
+    "Storing"
+  ],
+  "author": "Angela Lopez Mendoza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angelahack1/Keystore/issues"
+  },
+  "homepage": "https://github.com/angelahack1/Keystore#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "node-forge": "^1.3.1",
+    "properties-reader": "^2.3.0"
+  }
+}
