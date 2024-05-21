@@ -1,6 +1,7 @@
 const forge = require('node-forge');
 const fs = require('fs');
 const PropertiesReader = require('properties-reader');
+const keyexp = require('./key');
 
 const properties = PropertiesReader('./keystore.properties');
 var pswd = properties.get('keystore.password');
@@ -56,3 +57,7 @@ console.log("forgeBufferSskRXEncDecodedBinBufferCreated: <<<"+forgeBufferSskRXEn
 var sskRXDecrypted = key.decrypt(forgeBufferSskRXEncDecodedBinBufferCreated.bytes(), 'RSA-OAEP');
 
 console.log("SSK Decrypted: <<<"+sskRXDecrypted+">>>\n");
+
+console.log("********************************************************************\n\n\n\n\n");
+
+console.log("Buffer: <<<<"+keyexp+">>>>");
