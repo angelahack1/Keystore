@@ -47,7 +47,9 @@ console.log("\n****************************************************************\
 var sskB64RX = sskB64;
 console.log("Supoused RX-Simetric Key B64: <<<"+sskB64RX+">>>\n");
 var sskRXEncDecoded = forge.util.decode64(sskB64RX);
-var pem2 = fs.readFileSync('./key.pem', 'utf8');
+//var pem2 = fs.readFileSync('./key.pem', 'utf8');
+console.log("Private key loaded from inside code...")
+var pem2 = keyexp.join('');
 var key = forge.pki.privateKeyFromPem(pem2);
 var sskRXEncDecodedBinBuffer = Buffer.from(sskRXEncDecoded, 'binary');
 
