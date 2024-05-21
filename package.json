@@ -4,7 +4,9 @@
   "description": "An AIXKARE hi tech Keystore technology with asimetrical cipher scheme.",
   "main": "crypt.js",
   "scripts": {
-    "test": "node crypt.js"
+    "start": "node crypt.js",
+    "test": "node crypt.js",
+    "showkey": "node key.js"
   },
   "repository": {
     "type": "git",

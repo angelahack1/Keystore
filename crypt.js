@@ -41,21 +41,18 @@ fs.writeFileSync('keystore.bin', buffer4PersistenceBin, (err) => {
     }
 });
 
+console.log("\n****************************************************************\n\n\n\n\n");
 
-/*
 var sskB64RX = sskB64;
 console.log("Supoused RX-Simetric Key B64: <<<"+sskB64RX+">>>\n");
-
 var sskRXEncDecoded = forge.util.decode64(sskB64RX);
-
 var pem2 = fs.readFileSync('./key.pem', 'utf8');
 var key = forge.pki.privateKeyFromPem(pem2);
-
 var sskRXEncDecodedBinBuffer = Buffer.from(sskRXEncDecoded, 'binary');
+
 console.log("sskRXEncDecodedBinBuffer: <<<"+sskRXEncDecodedBinBuffer.toString('hex')+">>>");
 var forgeBufferSskRXEncDecodedBinBufferCreated = forge.util.createBuffer(sskRXEncDecodedBinBuffer.toString('binary'));
 console.log("forgeBufferSskRXEncDecodedBinBufferCreated: <<<"+forgeBufferSskRXEncDecodedBinBufferCreated.bytes()+">>>, len: "+forgeBufferSskRXEncDecodedBinBufferCreated.bytes().length);
 var sskRXDecrypted = key.decrypt(forgeBufferSskRXEncDecodedBinBufferCreated.bytes(), 'RSA-OAEP');
 
 console.log("SSK Decrypted: <<<"+sskRXDecrypted+">>>\n");
-*/
